@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --bs-beo-color: #fdc300;
+    --bs-primary-color: #4a4a49;
+    --bs-toolbar-bg-color:#EFEFEF;
+}
+@layer base {
+    body {
+      @apply bg-gray-200;
+      @apply text-gray-700;
+      @apply font-sans;
+      @apply text-sm;
+    }
+    h2{
+        @apply text-gray-700;
+        @apply text-2xl;
+        @apply font-bold;
+        
+    } 
+  }
+  @layer components {
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: none;
+        border-radius: 0.25rem;
+        box-shadow: 0px 2px 6px 0px #b5b5b5;
+    }    
+    .width-45{
+        width: 45%;
+    }
+    .width-24{
+      width: 24%;
+    }
+    .width-15{
+      width: 15%;
+    }
+    .width-99{
+      width: 99%;
+    }
+    .auto-fill{
+      width: 10px;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+    .right-box{
+      box-shadow:0px 4px 6px 0px #00000029;
+      margin-left: 6px;
+      min-height: 90vh;
+    }
+  }
